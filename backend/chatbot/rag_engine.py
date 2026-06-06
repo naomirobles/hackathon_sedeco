@@ -79,14 +79,16 @@ def _build_index() -> VectorStoreIndex:
     openai_api_key = os.getenv("OPENAI_API_KEY")
 
     if openrouter_api_key:
+        from llama_index.llms.openai_like import OpenAILike
         print("✓ Chatbot: Usando OpenRouter como motor LLM")
-        Settings.llm = OpenAI(
-            model="gemini-2.5-flash",
+        Settings.llm = OpenAILike(
+            model="google/gemma-4-26b-a4b-it",
             api_base="https://openrouter.ai/api/v1",
             api_key=openrouter_api_key,
+            is_chat_model=True,
             default_headers={
-                "HTTP-Referer": "https://hackathon-sedeco.cdmx.gob.mx", # Opcional
-                "X-Title": "Asesor de Negocios CDMX", # Opcional
+                "HTTP-Referer": "https://hackathon-sedeco.cdmx.gob.mx",
+                "X-Title": "Asesor de Negocios CDMX",
             }
         )
     elif openai_api_key:

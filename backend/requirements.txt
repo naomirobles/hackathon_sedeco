@@ -16,6 +16,7 @@ fiona==1.9.6
 # LlamaIndex: RAG + memoria conversacional
 llama-index==0.10.68
 llama-index-llms-openai==0.1.29
+llama-index-llms-openai-like==0.1.3
 llama-index-embeddings-openai==0.1.11
 llama-index-embeddings-huggingface==0.2.0
 
