@@ -15,9 +15,7 @@ C:\Python314\python.exe -m pip install pandas
 
 uvicorn main:app --reload --port 8000
 python -m uvicorn main:app --reload --port 8000
-C:\Python314\python.exe -m uvicorn main:app --reload --port 8000
-C:/Users/ssocial09/Documents/.entorno_python/plataforma_carto/numeralia-c5/backend/c5_mapas/python.exe -m uvicorn main:app 
---reload --port 8000
+
 
 # Terminal 2: Frontend (React)
 cd frontend
