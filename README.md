@@ -1,4 +1,4 @@
-# Proyecto Numeralia CDMX - React + FastAPI
+# Proyecto VIA CDMX - React + FastAPI
 
 ## 🚀 Cómo correr el proyecto 
 
