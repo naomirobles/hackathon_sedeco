@@ -4,7 +4,7 @@
 
 ### Opción 1: Desarrollo (recomendada para empezar)
 
-Necesitas **2 terminales** abiertas:
+Necesitas **2 terminales** abiertas: 
 
 ```bash
 # Terminal 1: Backend (FastAPI)
