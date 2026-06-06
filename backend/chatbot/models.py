@@ -20,6 +20,10 @@ class ChatRequest(BaseModel):
         description="Mensaje enviado por el usuario.",
         example="Quiero abrir un restaurante",
     )
+    assistant_id: str = Field(
+        default="viabilidad_negocio",
+        description="ID del asistente que debe responder.",
+    )
 
 
 class ChatResponse(BaseModel):
@@ -27,7 +31,11 @@ class ChatResponse(BaseModel):
 
     response: str = Field(
         ...,
-        description="Respuesta generada por el chatbot usando RAG.",
+        description="Respuesta generada por el chatbot.",
+    )
+    map_html: str | None = Field(
+        None,
+        description="HTML opcional de un mapa (Folium) para renderizar.",
     )
 
 

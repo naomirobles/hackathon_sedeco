@@ -16,6 +16,7 @@ from fastapi import APIRouter, HTTPException
 
 from .models import ChatRequest, ChatResponse, SessionClearResponse
 from .rag_engine import create_chat_engine
+from .spatial_agent import run_spatial_agent
 from .memory import get_session, set_session, clear_session, active_sessions
 
 router = APIRouter(prefix="/api", tags=["Chatbot"])
@@ -30,10 +31,15 @@ async def chat(request: ChatRequest):
     Recibe un mensaje del usuario y devuelve la respuesta del chatbot.
 
     - Mantiene memoria conversacional por `session_id`.
-    - Usa RAG para buscar información relevante en los documentos locales.
-    - Si la sesión no existe, la crea automáticamente.
+    - Usa RAG o el Agente Espacial según `assistant_id`.
     """
     try:
+        # Caso 1: Agente de Logística y Rutas (Stateless)
+        if request.assistant_id == "logistica_rutas":
+             response_text, map_html = run_spatial_agent(request.message)
+             return ChatResponse(response=response_text, map_html=map_html)
+
+        # Caso 2: Asesor de Negocios (RAG con LlamaIndex)
         # Recuperar motor existente o crear uno nuevo para esta sesión
         engine = get_session(request.session_id)
         if engine is None:
