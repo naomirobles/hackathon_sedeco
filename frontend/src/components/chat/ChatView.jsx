@@ -28,11 +28,11 @@ const CHAT_CATALOG = [
     available: true,
   },
   {
-    id: 'tramites_ciudadanos',
-    title: 'Trámites Ciudadanos',
-    description: 'Consultas generales sobre trámites de gobierno',
-    emoji: '📋',
-    available: false,
+    id: 'logistica_rutas',
+    title: 'Logística y Rutas',
+    description: 'Calcula rutas de entrega y busca servicios cercanos',
+    emoji: '🚚',
+    available: true,
   },
   {
     id: 'seguridad_vial',
@@ -148,7 +148,7 @@ function MessageBubble({ msg }) {
       )}
 
       <div style={{
-        maxWidth: '78%',
+        maxWidth: '85%',
         padding: '10px 14px',
         borderRadius: isUser ? '18px 18px 4px 18px' : '4px 18px 18px 18px',
         backgroundColor: isUser ? C.userBubble : C.botBubble,
@@ -160,6 +160,25 @@ function MessageBubble({ msg }) {
           ? <span>{msg.content}</span>
           : <MarkdownText text={msg.content} />
         }
+
+        {/* Renderizado de Mapa Folium si existe */}
+        {!isUser && msg.mapHtml && (
+          <div style={{ 
+            marginTop: 12, 
+            width: '100%', 
+            height: 350, 
+            borderRadius: 8, 
+            overflow: 'hidden',
+            border: `1px solid ${C.gray200}`
+          }}>
+            <iframe
+              title="Mapa de Ruta"
+              srcDoc={msg.mapHtml}
+              style={{ width: '100%', height: '100%', border: 'none' }}
+            />
+          </div>
+        )}
+
         <div style={{
           fontSize: 10, color: isUser ? 'rgba(255,255,255,0.6)' : '#aaa',
           marginTop: 4, textAlign: 'right',
@@ -342,8 +361,13 @@ function ChatWindow({ chatId, sessionState, onUpdateSession }) {
     setError(null);
 
     try {
-      const data = await sendChatMessage(sessionId, text);
-      const botMsg = { role: 'assistant', content: data.response, time: now() };
+      const data = await sendChatMessage(sessionId, text, chatId);
+      const botMsg = { 
+        role: 'assistant', 
+        content: data.response, 
+        time: now(),
+        mapHtml: data.map_html 
+      };
       onUpdateSession(chatId, { messages: [...updatedMessages, botMsg], sessionId });
     } catch (err) {
       setError(err.message);
