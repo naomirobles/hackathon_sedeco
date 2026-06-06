@@ -19,7 +19,7 @@ export default function FilterPolygonPanel({
   return (
     <div style={styles.panelSection}>
       {/* Selector de herramientas */}
-      <div style={{ display: 'flex', gap: 8, marginBottom: 2, justifyContent: 'space-between' }}>
+      <div id="guide-target-draw-tools" style={{ display: 'flex', gap: 8, marginBottom: 2, justifyContent: 'space-between' }}>
         <button
           title="Seleccionar"
           style={{ ...styles.toolBtn, backgroundColor: activeTool === 'select' ? '#9F2241' : '#f8fafc', color: activeTool === 'select' ? '#fff' : '#64748b' }}

@@ -25,6 +25,7 @@ export default function Toolbar({ activePanels, togglePanel, isChatOpen }) {
     const renderBtn = (btn) => (
     <div
       key={btn.id}
+      id={`guide-target-${btn.id}`}
       style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center' }}
       onMouseEnter={() => setHoveredBtn(btn.id)}
       onMouseLeave={() => setHoveredBtn(null)}

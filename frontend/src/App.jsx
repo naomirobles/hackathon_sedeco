@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import area   from '@turf/area';
 import length from '@turf/length';
 import circle from '@turf/circle';
@@ -43,6 +43,9 @@ import { LAYER_FIELD_MAP, LAYER_COLORS } from './constants';
 import Icons   from './utils/icons';
 import styles  from './styles';
 import { downloadMapHTML } from './utils/mapExport';
+
+// Guía contextual
+import { useGuide, GuideTooltip } from './guide/index.ts';
 
 // ── Inyectar CSS global una sola vez ──────────────────────────────────────────
 const globalStyle = document.createElement('style');
@@ -140,6 +143,22 @@ export default function App() {
 
   // ── Panel Chatbot ─────────────────────────────────────────────────────────
   const [isChatOpen, setIsChatOpen] = useState(false);
+
+  // ── Guía contextual ───────────────────────────────────────────────────────
+  const { currentStep, advance, complete, isStepActive } = useGuide();
+
+  // ── Avance automático de pasos de la guía ────────────────────────────────
+  useEffect(() => {
+    if (activePanels.includes('measure_filtrar') && isStepActive('step-filter-polygon')) advance();
+  }, [activePanels]);
+
+  useEffect(() => {
+    if (activePanels.includes('denue') && isStepActive('step-denue')) advance();
+  }, [activePanels]);
+
+  useEffect(() => {
+    if (isChatOpen && isStepActive('step-chat')) complete();
+  }, [isChatOpen]);
 
   // ── Filtrado espacial para capas subidas ──────────────────────────────────
   const filteredUserLayers = React.useMemo(() => {
@@ -267,6 +286,7 @@ export default function App() {
 
   const handleSetTool = (tool) => {
     if (!drawInstance) return;
+    if (isStepActive('step-draw-tool')) advance();
     setActiveTool(tool);
     circleCenter.current = null; circleStep.current = 0;
     setCirclePreview(null); setCirkleCenterMarker(null);
@@ -708,6 +728,7 @@ export default function App() {
       {/* ── Botón flotante del Chatbot (Esquina inferior derecha) ───────────── */}
       {!isChatOpen && (
         <button
+          id="guide-target-chat-float"
           onClick={() => setIsChatOpen(true)}
           title="Abrir Asistente Virtual"
           style={{
@@ -755,6 +776,9 @@ export default function App() {
           />
         </button>
       )}
+
+      {/* ── Guía contextual ───────────────────────────────────────────────────── */}
+      {currentStep && <GuideTooltip step={currentStep} />}
 
     </div>
   );
