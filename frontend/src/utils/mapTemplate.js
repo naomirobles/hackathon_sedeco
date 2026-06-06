@@ -111,6 +111,11 @@ const template = `<!DOCTYPE html>
         <div class="legend-section-title">Capas del usuario</div>
         <div id="user-layers-list"></div>
       </div>
+
+      <div class="legend-section" id="section-denue" style="display:none">
+        <div class="legend-section-title">Unidades económicas (DENUE)</div>
+        <div id="denue-list"></div>
+      </div>
     </div>
   </div>
 
@@ -120,6 +125,8 @@ const polygonsData   = __POLYGONS_DATA__;
 const poisData       = __POIS_DATA__;
 const userLayers     = __USER_LAYERS__;
 const drawnPolygon   = __DRAWN_POLYGON__;
+const denueData      = __DENUE_DATA__;
+const denueColorMap  = __DENUE_COLOR_MAP__;
 const layerColors    = __LAYER_COLORS__;
 const layerFieldMap  = __LAYER_FIELD_MAP__;
 
@@ -637,6 +644,126 @@ map.on('load', () => {
   });
 
   if (hasUserLayers) document.getElementById('section-user-layers').style.display = '';
+
+  // ── 6. DENUE ──────────────────────────────────────────────────────────────
+  if (denueData && denueData.features && denueData.features.length > 0) {
+    const denueCats = Object.keys(denueColorMap);
+
+    // Expresión de color por categoría para MapLibre
+    let denueColorExpr;
+    if (denueCats.length > 0) {
+      denueColorExpr = ['match', ['get', 'nombre_act']];
+      denueCats.forEach(cat => { denueColorExpr.push(cat, denueColorMap[cat]); });
+      denueColorExpr.push('#aaaaaa');
+    } else {
+      denueColorExpr = '#9F2241';
+    }
+
+    map.addSource('source-denue', { type: 'geojson', data: denueData });
+    map.addLayer({
+      id: 'layer-denue-points',
+      type: 'circle',
+      source: 'source-denue',
+      paint: {
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 3, 15, 7],
+        'circle-color': denueColorExpr,
+        'circle-opacity': 0.85,
+        'circle-stroke-width': 0.8,
+        'circle-stroke-color': '#ffffff',
+      },
+    });
+
+    // Popup al hacer clic en un punto DENUE
+    const DENUE_LABELS = {
+      nom_estab:  'Establecimiento',
+      codigo_act: 'Código de actividad',
+      nombre_act: 'Actividad',
+      per_ocu:    'Personal ocupado',
+      tipoUniEco: 'Tipo de unidad económica',
+      sector:     'Sector',
+    };
+    map.on('click', 'layer-denue-points', e => {
+      const props  = e.features[0].properties;
+      const coords = e.lngLat;
+      const color  = denueColorMap[props.nombre_act] || '#9F2241';
+
+      let html = '<div style="font-size:12px;min-width:210px;max-width:280px;font-family:system-ui,sans-serif">';
+      html += '<div style="background:' + color + ';color:#fff;padding:8px 12px;margin:-7px -7px 8px;border-radius:4px 4px 0 0">';
+      html += '<div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;opacity:0.85">DENUE — Unidad Económica</div>';
+      html += '<div style="font-size:13px;font-weight:700;margin-top:2px">' + (props.nombre_act || '—') + '</div></div>';
+
+      Object.entries(DENUE_LABELS).forEach(([key, label]) => {
+        const val = props[key];
+        if (val === null || val === undefined || String(val).trim() === '') return;
+        html += '<div style="padding:5px 4px;border-bottom:1px solid #f1f5f9">';
+        html += '<div style="font-size:9px;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:0.04em">' + label + '</div>';
+        html += '<div style="font-size:12px;color:#1e293b;margin-top:1px">' + String(val) + '</div></div>';
+      });
+      html += '</div>';
+
+      new maplibregl.Popup({ offset: 10 }).setLngLat([coords.lng, coords.lat]).setHTML(html).addTo(map);
+    });
+    map.on('mouseenter', 'layer-denue-points', () => map.getCanvas().style.cursor = 'pointer');
+    map.on('mouseleave', 'layer-denue-points', () => map.getCanvas().style.cursor = '');
+
+    // Leyenda DENUE — toggle global + top categorías
+    const denueList = document.getElementById('denue-list');
+
+    // Conteo por categoría
+    const denueByCat = {};
+    denueData.features.forEach(f => {
+      const cat = f.properties.nombre_act || 'Sin categoría';
+      denueByCat[cat] = (denueByCat[cat] || 0) + 1;
+    });
+    const sortedDenue = Object.entries(denueByCat).sort((a, b) => b[1] - a[1]);
+
+    // Nota de totales
+    const totalEl = document.createElement('div');
+    totalEl.style.cssText = 'font-size:11px;color:#64748b;margin-bottom:6px;padding:2px 0';
+    totalEl.textContent = denueData.features.length.toLocaleString() + ' unidades · ' + sortedDenue.length + ' categorías';
+    denueList.appendChild(totalEl);
+
+    // Toggle master para mostrar/ocultar toda la capa
+    const masterItem = makeLegendItem({
+      iconEl: circleLegendIcon('#9F2241'),
+      label: 'Puntos DENUE (todos)',
+      count: denueData.features.length,
+      onToggle: visible => {
+        if (map.getLayer('layer-denue-points')) {
+          map.setLayoutProperty('layer-denue-points', 'visibility', visible ? 'visible' : 'none');
+        }
+      },
+    });
+    denueList.appendChild(masterItem);
+
+    // Top 8 categorías como referencia visual
+    sortedDenue.slice(0, 8).forEach(([cat, count]) => {
+      const color = denueColorMap[cat] || '#aaa';
+      const itemEl = document.createElement('div');
+      itemEl.style.cssText = 'display:flex;align-items:center;gap:7px;padding:3px 2px 3px 20px;font-size:0.75rem;color:#475569';
+      const dot = document.createElement('span');
+      dot.style.cssText = 'width:9px;height:9px;border-radius:50%;flex-shrink:0;background:' + color;
+      const lbl = document.createElement('span');
+      lbl.style.flex = '1';
+      lbl.textContent = cat.length > 30 ? cat.slice(0, 30) + '…' : cat;
+      const cnt = document.createElement('span');
+      cnt.style.cssText = 'font-size:0.68rem;color:#aaa';
+      cnt.textContent = '(' + count + ')';
+      itemEl.appendChild(dot);
+      itemEl.appendChild(lbl);
+      itemEl.appendChild(cnt);
+      denueList.appendChild(itemEl);
+    });
+
+    if (sortedDenue.length > 8) {
+      const moreEl = document.createElement('div');
+      moreEl.style.cssText = 'font-size:10px;color:#94a3b8;font-style:italic;padding:3px 2px 3px 20px';
+      moreEl.textContent = '+' + (sortedDenue.length - 8) + ' categorías más';
+      denueList.appendChild(moreEl);
+    }
+
+    document.getElementById('section-denue').style.display = '';
+  }
 
 }); // end map.on('load')
 </script>

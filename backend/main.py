@@ -20,6 +20,8 @@ import urllib.error
 import re
 from urllib.parse import urljoin
 import io
+from shapely.geometry import shape
+from shapely.ops import unary_union
 
 # ─── Chatbot RAG ──────────────────────────────────────────────────────────────
 # Cargar variables de entorno desde .env (si existe)
@@ -39,6 +41,9 @@ class FileUpload(BaseModel):
 
 class UrlAnalizer(BaseModel):
     url: str
+
+class GeometryRequest(BaseModel):
+    geometry: dict  # GeoJSON FeatureCollection, Feature, o Geometry
 
 
 app = FastAPI(title="API Consulta Cartográfica CDMX")
@@ -434,6 +439,88 @@ async def get_poligonos(
         return _to_geojson(data)
 
     return {"error": f"Capa '{layer}' no reconocida.", "features": []}
+
+# =============================================================================
+# ENDPOINTS DENUE — carga lazy (no se inicializa al arrancar)
+# =============================================================================
+
+DENUE_PATH = ASSETS_DIR / "poligonos" / "denue_cuauhtemoc.gpkg"
+_denue_gdf = None  # caché en memoria tras la primera petición
+
+
+def _get_denue_gdf():
+    global _denue_gdf
+    if _denue_gdf is None and DENUE_PATH.exists():
+        gdf = gpd.read_file(DENUE_PATH, layer=0)
+        if not gdf.crs or gdf.crs.to_epsg() != 4326:
+            gdf = gdf.to_crs(epsg=4326)
+        cols_wanted = ['nombre_act', 'nom_estab', 'codigo_act', 'per_ocu', 'tipoUniEco', 'sector', 'geometry']
+        cols_existing = [c for c in cols_wanted if c in gdf.columns]
+        _denue_gdf = gdf[cols_existing].copy()
+        print(f"✓ DENUE cargado: {len(_denue_gdf)} registros")
+    return _denue_gdf
+
+
+def _build_filter_geom(geom_data: dict):
+    """Convierte FeatureCollection/Feature/Geometry de GeoJSON a shapely."""
+    t = geom_data.get('type', '')
+    if t == 'FeatureCollection':
+        return unary_union([shape(f['geometry']) for f in geom_data['features']])
+    if t == 'Feature':
+        return shape(geom_data['geometry'])
+    return shape(geom_data)
+
+
+@app.post("/api/denue")
+async def get_denue(req: GeometryRequest):
+    """Filtra unidades DENUE por geometría dibujada. Devuelve GeoJSON mínimo."""
+    try:
+        gdf = _get_denue_gdf()
+        if gdf is None or gdf.empty:
+            return {"type": "FeatureCollection", "features": []}
+
+        filter_geom = _build_filter_geom(req.geometry)
+        mask = gdf.geometry.intersects(filter_geom)
+        result = gdf[mask].copy()
+
+        if result.empty:
+            return {"type": "FeatureCollection", "features": []}
+
+        return json.loads(result.to_json())
+    except Exception as e:
+        print(f"Error en /api/denue: {e}")
+        return {"type": "FeatureCollection", "features": []}
+
+
+@app.post("/api/denue/stats")
+async def get_denue_stats(req: GeometryRequest):
+    """Devuelve estadísticas agregadas por nombre_act en el área filtrada."""
+    try:
+        gdf = _get_denue_gdf()
+        if gdf is None or gdf.empty:
+            return {"total": 0, "categories": []}
+
+        filter_geom = _build_filter_geom(req.geometry)
+        mask = gdf.geometry.intersects(filter_geom)
+        filtered = gdf[mask]
+
+        total = len(filtered)
+        if total == 0:
+            return {"total": 0, "categories": []}
+
+        counts = (
+            filtered['nombre_act']
+            .value_counts()
+            .reset_index()
+        )
+        counts.columns = ['nombre_act', 'count']
+        counts['percentage'] = (counts['count'] / total * 100).round(1)
+
+        return {"total": int(total), "categories": counts.to_dict('records')}
+    except Exception as e:
+        print(f"Error en /api/denue/stats: {e}")
+        return {"total": 0, "categories": []}
+
 
 @app.post("/api/upload_base64")
 async def upload_base64(data: FileUpload):

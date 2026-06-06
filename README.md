@@ -1,6 +1,6 @@
 # Proyecto Numeralia CDMX - React + FastAPI
 
-## 🚀 Cómo correr el proyecto
+## 🚀 Cómo correr el proyecto 
 
 ### Opción 1: Desarrollo (recomendada para empezar)
 

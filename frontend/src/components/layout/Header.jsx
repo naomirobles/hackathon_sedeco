@@ -12,9 +12,9 @@ export default function Header() {
           onError={(e) => (e.target.style.display = 'none')}
         />
         <div style={styles.headerTitles}>
-          <span style={styles.headerTitle}>C5</span>
+          <span style={styles.headerTitle}>SEDECO</span>
           <span style={styles.headerSubtitle}>
-            CENTRO DE COMANDO, CONTROL, CÓMPUTO, COMUNICACIONES Y CONTACTO CIUDADANO
+            Secretaría de Desarrollo Económico
           </span>
         </div>
       </div>

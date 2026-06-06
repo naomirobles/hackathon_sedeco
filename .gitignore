@@ -41,3 +41,6 @@ Thumbs.db
 # Project specific (Optional: uncomment if you don't want to track data files)
 # backend/data/*.xlsx
 # backend/data/*.csv
+
+# Archivos geoespaciales demasiado grandes para GitHub (>100 MB)
+backend/assets/poligonos/denue_ciudad.gpkg

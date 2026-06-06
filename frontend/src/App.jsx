@@ -9,6 +9,7 @@ import { point } from '@turf/helpers';
 import { useFilters }  from './hooks/useFilter';
 import { usePolygons } from './hooks/usePolygons';
 import { usePois }     from './hooks/usePOIS';
+import { useDenue }    from './hooks/useDenue';
 
 // Layout
 import Header        from './components/layout/Header';
@@ -31,6 +32,7 @@ import MeasurementPanel   from './components/panels/MeasurementPanel';
 import DistancePanel   from './components/panels/DistancePanel';
 import FilterPolygonPanel   from './components/panels/FilterPolygonPanel';
 import PoisPanel          from './components/panels/PoisPanel';
+import DenuePanel         from './components/panels/DenuePanel';
 import UploadPanel        from './components/panels/UploadPanel';
 
 // Chatbot / Asesor de Negocios IA
@@ -66,6 +68,11 @@ export default function App() {
   // ── Polígonos y POIs ───────────────────────────────────────────────────────
   const polygonsData = usePolygons(filters);
   const { data: rawPoisData, menuOptions: poisMenuOptions, especialidades } = usePois(filters);
+
+  // ── DENUE — lazy, solo cuando hay filtro espacial ─────────────────────────
+  const { denueData, denueStats, colorMap: denueColorMap, loading: denueLoading } = useDenue(filters.spatialFilterPolygons);
+  const [denueVisible, setDenueVisible] = useState(true);
+  const [denuePopup, setDenuePopup]     = useState(null);
 
   // ── Filtrado espacial en el cliente (para el mapa) ─────────────────────────
   const poisData = React.useMemo(() => {
@@ -362,7 +369,22 @@ export default function App() {
 
     const features = e.features || [];
 
-    // 2. Lógica para POIs (Puntos y Polígonos)
+    // 2. Puntos DENUE
+    const denueFeature = features.find(f => f.layer.id === 'layer-denue-points');
+    if (denueFeature) {
+      const nombreAct = denueFeature.properties.nombre_act;
+      setDenuePopup({
+        longitude:  e.lngLat.lng,
+        latitude:   e.lngLat.lat,
+        color:      denueColorMap[nombreAct] || '#9F2241',
+        properties: denueFeature.properties,
+      });
+      setPolyPopup(null);
+      return;
+    }
+    setDenuePopup(null);
+
+    // 3. Lógica para POIs (Puntos y Polígonos)
     const poiFeature = features.find(f =>
       f.layer.id.startsWith('layer-poi-') &&
       (f.layer.id.endsWith('-fill') || f.layer.id.endsWith('-point'))
@@ -396,7 +418,7 @@ export default function App() {
     }
 
     setPolyPopup(null);
-  }, [activeTool, measureMode, drawInstance, poisData]);
+  }, [activeTool, measureMode, drawInstance, poisData, denueColorMap]);
 
   // ── Toggle de paneles ─────────────────────────────────────────────────────
   const togglePanel = (id) => {
@@ -416,6 +438,8 @@ export default function App() {
         drawnPolygon: allDrawings,
         mapStyle,
         viewState,
+        denueData:     denueVisible ? denueData : null,
+        denueColorMap: denueColorMap,
       });
       return;
     }
@@ -453,6 +477,11 @@ export default function App() {
           cursor={cursor}
           polygonsData={polygonsData}
           poisData={poisData}
+          denueData={denueData}
+          denueColorMap={denueColorMap}
+          denueVisible={denueVisible}
+          denuePopup={denuePopup}
+          onCloseDenuePopup={() => setDenuePopup(null)}
           customMarker={customMarker}
           circlePreview={circlePreview}
           circleCenterMarker={circleCenterMarker}
@@ -627,6 +656,24 @@ export default function App() {
           filteredPoisCount={filteredPoisCount}
           onSetTool={handleSetTool}
           activeTool={activeTool}
+        />
+      </FloatingPanel>
+
+      <FloatingPanel
+        id="denue"
+        title="Unidades Económicas DENUE"
+        icon={Icons.denue}
+        isOpen={activePanels.includes('denue')}
+        onClose={() => togglePanel('denue')}
+        initialPosition={{ x: 70, y: 100 }}
+        width={480}
+      >
+        <DenuePanel
+          denueStats={denueStats}
+          colorMap={denueColorMap}
+          visible={denueVisible}
+          onToggleVisible={() => setDenueVisible(v => !v)}
+          loading={denueLoading}
         />
       </FloatingPanel>
 

@@ -8,6 +8,8 @@ export function downloadMapHTML({
   drawnPolygon,
   mapStyle,
   viewState,
+  denueData,
+  denueColorMap,
 }) {
   const mapStyleUrl = MAP_STYLES.find(s => s.id === mapStyle)?.url ?? MAP_STYLES[0].url;
 
@@ -29,6 +31,8 @@ export function downloadMapHTML({
   const safePoisData      = JSON.stringify(poisData      || {});
   const safeUserLayers    = JSON.stringify(userLayers    || []);
   const safeDrawnPolygon  = JSON.stringify(normalizedDrawn);
+  const safeDenueData     = JSON.stringify(denueData     || null);
+  const safeDenueColorMap = JSON.stringify(denueColorMap || {});
 
   const htmlContent = template
     .replace('__EXPORT_DATE__',       new Date().toLocaleString('es-MX'))
@@ -36,6 +40,8 @@ export function downloadMapHTML({
     .replace('__POIS_DATA__',         safePoisData)
     .replace('__USER_LAYERS__',       safeUserLayers)
     .replace('__DRAWN_POLYGON__',     safeDrawnPolygon)
+    .replace('__DENUE_DATA__',        safeDenueData)
+    .replace('__DENUE_COLOR_MAP__',   safeDenueColorMap)
     .replace('__LAYER_COLORS__',      JSON.stringify(LAYER_COLORS))
     .replace('__LAYER_FIELD_MAP__',   JSON.stringify(LAYER_FIELD_MAP))
     .replace('__MAP_STYLE_URL__',     mapStyleUrl)

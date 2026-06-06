@@ -1,0 +1,635 @@
+Actividades administrativas de instituciones de bienestar social
+Administraci�n p�blica en general
+Mantenimiento de la seguridad y el orden p�blico
+Impartici�n de justicia
+Regulaci�n y fomento de actividades para mejorar y preservar el medio ambiente
+�rganos legislativos
+Regulaci�n y fomento del desarrollo econ�mico
+Relaciones exteriores
+Actividades de seguridad nacional
+Comercio al por mayor de abarrotes
+Comercio al por mayor de partes y refacciones nuevas para autom�viles, camionetas y camiones
+Comercio al por mayor de pan y pasteles
+Comercio al por mayor de equipo de telecomunicaciones, fotograf�a y cinematograf�a
+Comercio al por mayor de art�culos y accesorios para dise�o y pintura art�stica
+Comercio al por mayor de fertilizantes, plaguicidas y semillas para siembra
+Comercio al por mayor de mobiliario y equipo de oficina
+Comercio al por mayor de equipo y material el�ctrico
+Comercio al por mayor de art�culos de joyer�a y relojes
+Comercio al por mayor de art�culos de papeler�a
+Comercio al por mayor de desechos met�licos
+Comercio al por mayor de juguetes y bicicletas
+Comercio al por mayor de fibras, hilos y telas
+Comercio al por mayor de mobiliario, equipo e instrumental m�dico y de laboratorio
+Comercio al por mayor de productos farmac�uticos
+Comercio al por mayor de carne de aves
+Comercio al por mayor de materiales met�licos para la construcci�n y la manufactura
+Comercio al por mayor de bebidas no alcoh�licas y hielo
+Comercio al por mayor de envases en general, papel y cart�n para la industria
+Comercio al por mayor de desechos de papel y de cart�n
+Comercio al por mayor de ropa, bisuter�a y accesorios de vestir
+Comercio al por mayor de electrodom�sticos menores y aparatos de l�nea blanca
+Comercio al por mayor de productos qu�micos para la industria farmac�utica y para otro uso industrial
+Comercio al por mayor de art�culos y aparatos deportivos
+Comercio al por mayor de otras materias primas para otras industrias
+Comercio al por mayor de otra maquinaria y equipo de uso general
+Comercio al por mayor de calzado
+Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas
+Comercio al por mayor de vinos y licores
+Comercio al por mayor de revistas y peri�dicos
+Comercio al por mayor de maquinaria y equipo para otros servicios y para actividades comerciales
+Comercio al por mayor de maquinaria y equipo para la industria manufacturera
+Comercio al por mayor de mobiliario, equipo, y accesorios de c�mputo
+Comercio al por mayor de cemento, tabique y grava
+Comercio al por mayor de art�culos de perfumer�a y cosm�ticos
+Comercio al por mayor de leche y otros productos l�cteos
+Comercio al por mayor de madera para la construcci�n y la industria
+Comercio al por mayor de semillas y granos alimenticios, especias y chiles secos
+Comercio al por mayor de blancos
+Comercio al por mayor de otros productos textiles
+Comercio al por mayor de frutas y verduras frescas
+Intermediaci�n de comercio al por mayor de productos para la industria, el comercio y los servicios
+Comercio al por mayor de libros
+Comercio al por mayor de otros alimentos
+Comercio al por mayor de otros materiales para la construcci�n, excepto de madera y met�licos
+Comercio al por mayor de otros materiales de desecho
+Comercio al por mayor de art�culos desechables
+Comercio al por mayor de maquinaria y equipo para la construcci�n y la miner�a
+Intermediaci�n de comercio al por mayor de productos de uso dom�stico y personal
+Comercio al por mayor de cueros y pieles
+Comercio al por mayor de cigarros, puros y tabaco
+Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca
+Comercio al por mayor de pintura
+Comercio al por mayor de desechos de pl�stico
+Comercio al por mayor de desechos de vidrio
+Comercio al por mayor de vidrios y espejos
+Comercio al por mayor de dulces y materias primas para reposter�a
+Comercio al por mayor de combustibles de uso industrial
+Comercio al por mayor de carnes rojas
+Comercio al por mayor de discos y casetes
+Comercio al por mayor de cerveza
+Comercio al por mayor de camiones
+Comercio al por mayor de pescados y mariscos
+Comercio al por mayor de huevo
+Comercio al por mayor de conservas alimenticias
+Comercio al por menor en tiendas de abarrotes, ultramarinos y miscel�neas
+Comercio al por menor de ropa, excepto de beb� y lencer�a
+Comercio al por menor de ropa de cuero y piel y de otros art�culos de estos materiales
+Comercio al por menor de art�culos de papeler�a
+Comercio al por menor de disfraces, vestimenta regional y vestidos de novia
+Comercio al por menor de instrumentos musicales
+Comercio al por menor de calzado
+Comercio al por menor de sombreros
+Comercio al por menor de bisuter�a y accesorios de vestir
+Comercio al por menor de juguetes
+Comercio al por menor de art�culos de joyer�a y relojes
+Comercio al por menor de art�culos de perfumer�a y cosm�ticos
+Comercio al por menor de equipo y material fotogr�fico
+Comercio al por menor de lencer�a
+Comercio al por menor de ropa de beb�
+Comercio al por menor de lentes
+Comercio al por menor de art�culos y aparatos deportivos
+Comercio al por menor de discos y casetes
+Comercio al por menor de productos naturistas, medicamentos homeop�ticos y de complementos alimenticios
+Comercio al por menor de libros
+Comercio al por menor de art�culos ortop�dicos
+Comercio al por menor de revistas y peri�dicos
+Farmacias sin minis�per
+Comercio al por menor de bicicletas
+Comercio al por menor de pa�ales desechables
+Farmacias con minis�per
+Comercio al por menor de carnes rojas
+Comercio al por menor de otros alimentos
+Comercio al por menor de carne de aves
+Comercio al por menor de semillas y granos alimenticios, especias y chiles secos
+Comercio al por menor de frutas y verduras frescas
+Comercio al por menor de blancos
+Comercio al por menor de telas
+Comercio al por menor de dulces y materias primas para reposter�a
+Comercio al por menor en minisupers
+Comercio al por menor en supermercados
+Comercio al por menor de paletas de hielo y helados
+Comercio al por menor de cigarros, puros y tabaco
+Comercio al por menor de bebidas no alcoh�licas y hielo
+Comercio al por menor de leche, otros productos l�cteos y embutidos
+Comercio al por menor de cerveza
+Comercio al por menor de art�culos de mercer�a y boneter�a
+Comercio al por menor de vinos y licores
+Comercio al por menor de pescados y mariscos
+Comercio al por menor en tiendas departamentales
+Comercio al por menor de mascotas
+Comercio al por menor de tel�fonos y otros aparatos de comunicaci�n
+Comercio al por menor de cristaler�a, loza y utensilios de cocina
+Comercio al por menor de mobiliario, equipo y accesorios de c�mputo
+Comercio al por menor de art�culos para la limpieza
+Comercio al por menor de l�mparas ornamentales y candiles
+Comercio al por menor de art�culos desechables
+Comercio al por menor en tiendas de artesan�as
+Comercio al por menor de regalos
+Comercio al por menor de art�culos usados
+Comercio al por menor de partes y refacciones usadas para autom�viles, camionetas y camiones
+Comercio al por menor de partes y refacciones nuevas para autom�viles, camionetas y camiones
+Comercio al por menor de pisos y recubrimientos cer�micos
+Comercio al por menor de electrodom�sticos menores y aparatos de l�nea blanca
+Comercio al por menor de antig�edades y obras de arte
+Comercio al por menor en ferreter�as y tlapaler�as
+Comercio al por menor de otros art�culos para la decoraci�n de interiores
+Comercio al por menor de alfombras, cortinas, tapices y similares
+Comercio al por menor de gasolina y diesel
+Comercio al por menor de muebles para el hogar
+Comercio al por menor de vidrios y espejos
+Comercio al por menor de art�culos para albercas y otros art�culos
+Comercio al por menor de pintura
+Comercio al por menor de motocicletas
+Comercio al por menor de plantas y flores naturales
+Comercio al por menor exclusivamente a trav�s de Internet, y cat�logos impresos, televisi�n y similares
+Comercio al por menor de otros art�culos de uso personal
+Comercio al por menor de autom�viles y camionetas usados
+Comercio al por menor de art�culos religiosos
+Comercio al por menor de materiales para la construcci�n en tiendas de autoservicio especializadas
+Comercio al por menor de llantas y c�maras para autom�viles, camionetas y camiones
+Comercio al por menor de aceites y grasas lubricantes, aditivos y similares para veh�culos de motor
+Comercio al por menor de autom�viles y camionetas nuevos
+Comercio al por menor de gas L. P. en cilindros y para tanques estacionarios
+Comercio al por menor de otros combustibles
+Comercio al por menor de gas L. P. en estaciones de carburaci�n
+Comercio al por menor de otros veh�culos de motor
+Comercio al por menor de muebles para jard�n
+Edificaci�n de inmuebles comerciales y de servicios, excepto la supervisi�n
+Edificaci�n de vivienda unifamiliar
+Instalaciones de sistemas centrales de aire acondicionado y calefacci�n
+Edificaci�n de vivienda multifamiliar
+Supervisi�n de edificaci�n de inmuebles comerciales y de servicios
+Edificaci�n de naves y plantas industriales, excepto la supervisi�n
+Instalaciones el�ctricas en construcciones
+Construcci�n de plantas de refiner�a y petroqu�mica
+Preparaci�n de terrenos para la construcci�n
+Otros trabajos en exteriores
+Instalaci�n de se�alamientos y protecciones en obras viales
+Otras instalaciones y equipamiento en construcciones
+Construcci�n de obras para telecomunicaciones
+Construcci�n de carreteras, puentes y similares
+Instalaciones hidrosanitarias y de gas
+Realizaci�n de trabajos de carpinter�a en el lugar de la construcci�n
+Construcci�n de obras para el tratamiento, distribuci�n y suministro de agua y drenaje
+Supervisi�n de edificaci�n residencial
+Otros trabajos de acabados en edificaciones
+Supervisi�n de edificaci�n de naves y plantas industriales
+Supervisi�n de construcci�n de otras obras de ingenier�a civil
+Construcci�n de obras para transporte el�ctrico y ferroviario
+Colocaci�n de muros falsos y aislamiento
+Trabajos de alba�iler�a
+Colocaci�n de pisos flexibles y de madera
+Construcci�n de obras de generaci�n y conducci�n de energ�a el�ctrica
+Trabajos de enyesado, empastado y tiroleado
+Construcci�n de obras de urbanizaci�n
+Trabajos de cimentaciones
+Trabajos de pintura y otros cubrimientos de paredes
+Construcci�n de presas y represas
+Corporativos
+Tenedoras de acciones
+Captaci�n, tratamiento y suministro de agua realizados por el sector p�blico
+Comercializaci�n de energ�a el�ctrica
+Generaci�n de electricidad a partir de combustibles f�siles
+Distribuci�n de energ�a el�ctrica
+Transmisi�n de energ�a el�ctrica
+Generaci�n de electricidad a partir de energ�a e�lica
+Suministro de gas natural por ductos al consumidor final
+Generaci�n de electricidad a partir de energ�a solar
+Confecci�n en serie de otra ropa exterior de materiales textiles
+Elaboraci�n de harina de trigo
+Confecci�n, bordado y deshilado de productos textiles
+Confecci�n de prendas de vestir sobre medida
+Confecci�n en serie de disfraces y trajes t�picos
+Elaboraci�n de gelatinas y otros postres en polvo
+Purificaci�n y embotellado de agua
+Preparaci�n y envasado de t�
+Elaboraci�n de harina de otros productos agr�colas
+Elaboraci�n de helados y paletas
+Elaboraci�n de chocolate y productos de chocolate
+Panificaci�n tradicional
+Confecci�n de otros accesorios y prendas de vestir no clasificados en otra parte
+Elaboraci�n de tortillas de ma�z y molienda de nixtamal
+Confecci�n de cortinas, blancos y similares
+Elaboraci�n de cerveza
+Curtido y acabado de cuero y piel
+Confecci�n en serie de uniformes
+Confecci�n de productos de textiles recubiertos y de materiales suced�neos
+Fabricaci�n de telas angostas de tejido de trama y pasamaner�a
+Fabricaci�n de ropa exterior de tejido de punto
+Elaboraci�n de tortillas de harina de trigo de forma tradicional
+Confecci�n en serie de camisas
+Fabricaci�n de calzado con corte de piel y cuero
+Fabricaci�n de calcetines y medias de tejido de punto
+Conservaci�n de frutas y verduras por procesos distintos a la congelaci�n y la deshidrataci�n
+Confecci�n en serie de ropa interior y de dormir
+Elaboraci�n de caf� tostado y molido
+Conservaci�n de guisos y otros alimentos preparados por procesos distintos a la congelaci�n
+Elaboraci�n de condimentos y aderezos
+Beneficio del caf�
+Fabricaci�n de bolsos de mano, maletas y similares
+Elaboraci�n de derivados y fermentos l�cteos
+Elaboraci�n de az�car de ca�a
+Elaboraci�n de dulces, chicles y productos de confiter�a que no sean de chocolate
+Fabricaci�n de telas recubiertas
+Elaboraci�n de mezcal
+Acabado de productos textiles
+Confecci�n de sombreros y gorras
+Confecci�n de prendas de vestir de cuero, piel y de materiales suced�neos
+Fabricaci�n de telas anchas de tejido de trama
+Fabricaci�n de banderas y otros productos textiles no clasificados en otra parte
+Fabricaci�n de otros productos de cuero, piel y materiales suced�neos
+Fabricaci�n de ropa interior de tejido de punto
+Elaboraci�n de galletas y pastas para sopa
+Fabricaci�n de calzado con corte de tela
+Preparaci�n de embutidos y otras conservas de carne de ganado, aves y otros animales comestibles
+Elaboraci�n de botanas
+Elaboraci�n de otros alimentos
+Elaboraci�n de otras bebidas destiladas
+Fabricaci�n de calzado de pl�stico
+Elaboraci�n de refrescos y otras bebidas no alcoh�licas
+Confecci�n de costales
+Fabricaci�n de hilos para coser y bordar
+Elaboraci�n de alimentos frescos para consumo inmediato
+Elaboraci�n de ron y otras bebidas destiladas de ca�a
+Panificaci�n industrial
+Elaboraci�n de concentrados, polvos, jarabes y esencias de sabor para bebidas
+Fabricaci�n de alfombras y tapetes
+Preparaci�n e hilado de fibras blandas naturales
+Preparaci�n e hilado de fibras duras naturales
+Congelaci�n de guisos y otros alimentos preparados
+Fabricaci�n de telas no tejidas (comprimidas)
+Fabricaci�n de envases de cart�n
+Fabricaci�n de botellas de pl�stico
+Fabricaci�n de envases y contenedores de pl�stico para embalaje con y sin reforzamiento
+Fabricaci�n de tintas para impresi�n
+Impresi�n de formas continuas y otros impresos
+Fabricaci�n de productos de madera de uso industrial
+Fabricaci�n de jabones, limpiadores y dent�fricos
+Fabricaci�n de productos de madera para la construcci�n
+Fabricaci�n de otros productos de vidrio
+Fabricaci�n de otros productos de cart�n y papel
+Fabricaci�n de espumas y productos de uretano
+Fabricaci�n de productos de papeler�a
+Industrias conexas a la impresi�n
+Fabricaci�n de cart�n y cartoncillo a partir de pulpa
+Impresi�n de libros, peri�dicos y revistas
+Fabricaci�n de pinturas y recubrimientos
+Fabricaci�n de art�culos de vidrio de uso dom�stico
+Fabricaci�n de preparaciones farmac�uticas
+Fabricaci�n de art�culos y utensilios de madera para el hogar
+Fabricaci�n de otros productos de pl�stico sin reforzamiento
+Fabricaci�n de otros productos de madera
+Fabricaci�n de bolsas de papel y productos celul�sicos recubiertos y tratados
+Fabricaci�n de productos a base de piedras de cantera
+Fabricaci�n de pel�culas, placas y papel fotosensible para fotograf�a
+Fabricaci�n de resinas sint�ticas
+Fabricaci�n de otros productos qu�micos b�sicos org�nicos
+Fabricaci�n de cerillos
+Fabricaci�n de gases industriales
+Fabricaci�n de bandas y mangueras de hule y de pl�stico
+Fabricaci�n de otros productos qu�micos
+Fabricaci�n de papel a partir de pulpa
+Fabricaci�n de persianas y cortineros
+Fabricaci�n de cosm�ticos, perfumes y otras preparaciones de tocador
+Fabricaci�n de otros productos de hule
+Fabricaci�n de productos para embalaje y envases de madera
+Fabricaci�n de art�culos de alfarer�a, porcelana y loza
+Fabricaci�n de productos de materiales trenzables, excepto palma
+Fabricaci�n de laminados de pl�stico r�gido
+Fabricaci�n de tuber�a y conexiones, y tubos para embalaje
+Fabricaci�n de bolsas y pel�culas de pl�stico flexible
+Fabricaci�n de muebles, excepto cocinas integrales, muebles modulares de ba�o y muebles de oficina y estanter�a
+Fabricaci�n de pesticidas y otros agroqu�micos, excepto fertilizantes
+Fabricaci�n de muebles de oficina y estanter�a
+Fabricaci�n de otros productos de pl�stico de uso industrial sin reforzamiento
+Fabricaci�n de concreto
+Fabricaci�n de productos de pl�stico para el hogar con y sin reforzamiento
+Aserrado de tablas y tablones
+Fabricaci�n de otros productos a base de minerales no met�licos
+Tratamiento de la madera y fabricaci�n de postes y durmientes
+Fabricaci�n de productos refractarios
+Orfebrer�a y joyer�a de metales y piedras preciosos
+Fabricaci�n de otra maquinaria y equipo para el comercio y los servicios
+Fabricaci�n de productos de herrer�a
+Fabricaci�n de anuncios y se�alamientos
+Fabricaci�n de cocinas integrales y muebles modulares de ba�o
+Otras industrias manufactureras
+Fabricaci�n de envases y ampolletas de vidrio
+Aserraderos integrados
+Fabricaci�n de material desechable de uso m�dico
+Recubrimientos y terminados met�licos
+Fabricaci�n de art�culos oft�lmicos
+Fabricaci�n de enchufes, contactos, fusibles y otros accesorios para instalaciones el�ctricas
+Metalister�a de metales no preciosos
+Joyer�a de metales y piedras no preciosos y de otros materiales
+Fabricaci�n de juguetes
+Fabricaci�n de instrumentos musicales
+Fabricaci�n de maquinaria y equipo para la industria alimentaria y de las bebidas
+Fabricaci�n de otros productos met�licos
+Fabricaci�n de equipo no electr�nico para uso m�dico, dental y para laboratorio
+Fabricaci�n de maquinaria y equipo para otras industrias manufactureras
+Industria b�sica del aluminio
+Fabricaci�n de otros instrumentos de medici�n, control, navegaci�n, y equipo m�dico electr�nico
+Fabricaci�n de enseres electrodom�sticos menores
+Moldeo por fundici�n de piezas met�licas no ferrosas
+Fabricaci�n de utensilios de cocina met�licos
+Fabricaci�n de estructuras met�licas
+Fabricaci�n de maquinaria y equipo para la industria de la impresi�n
+Fabricaci�n de computadoras y equipo perif�rico
+Fundici�n y refinaci�n de otros metales no ferrosos
+Fabricaci�n de colchones
+Fabricaci�n de pigmentos y colorantes sint�ticos
+Fabricaci�n de componentes electr�nicos
+Fabricaci�n de productos met�licos forjados y troquelados
+Fabricaci�n de cierres, botones y agujas
+Fabricaci�n de alambre, productos de alambre y resortes
+Acu�aci�n e impresi�n de monedas
+Fabricaci�n de art�culos y accesorios para escritura, pintura, dibujo y actividades de oficina
+Fabricaci�n de productos preesforzados de concreto
+Fabricaci�n de otros productos qu�micos b�sicos inorg�nicos
+Fabricaci�n de maquinaria y equipo para la industria metalmec�nica
+Fabricaci�n de adhesivos
+Fabricaci�n de productos el�ctricos de carb�n y grafito
+Fabricaci�n de equipo ferroviario
+Fabricaci�n de espumas y productos de poliestireno
+Fabricaci�n de maquinaria y equipo para levantar y trasladar
+Fabricaci�n de equipo de transmisi�n y recepci�n de se�ales de radio y televisi�n, y equipo de comunicaci�n inal�mbrico
+Fabricaci�n de vidrio
+Fabricaci�n de escobas, cepillos y similares
+Fabricaci�n de equipo y aparatos de distribuci�n de energ�a el�ctrica
+Fundici�n y refinaci�n de metales preciosos
+Fabricaci�n de art�culos deportivos
+Fabricaci�n de velas y veladoras
+Fabricaci�n de tanques met�licos de calibre grueso
+Fabricaci�n de otros productos de hierro y acero
+Fabricaci�n de maquinaria y equipo para la industria del hule y del pl�stico
+Maquinado de piezas met�licas para maquinaria y equipo en general
+Fabricaci�n de l�mparas ornamentales
+Fabricaci�n de bombas y sistemas de bombeo
+Fabricaci�n de bicicletas y triciclos
+Fabricaci�n de equipo de refrigeraci�n industrial y comercial
+Fabricaci�n de focos
+Fabricaci�n de tornillos, tuercas, remaches y similares
+Laminaci�n secundaria de cobre
+Fabricaci�n de tubos y postes de hierro y acero
+Fabricaci�n de herrajes y cerraduras
+Fabricaci�n de relojes
+Fabricaci�n de asientos y accesorios interiores para veh�culos automotores
+Fabricaci�n de maquinaria y equipo para la industria de la madera
+Fabricaci�n de carrocer�as y remolques
+Operadores de servicios de telecomunicaciones al�mbricas
+Bibliotecas y archivos del sector p�blico
+Edici�n de peri�dicos integrada con la impresi�n
+Edici�n de otros materiales en formato electr�nico
+Edici�n de libros en formato electr�nico
+Exhibici�n de pel�culas y otros materiales audiovisuales
+Editoras de m�sica
+Producci�n de pel�culas
+Edici�n de revistas y otras publicaciones peri�dicas integrada con la impresi�n
+Producci�n de programas para la televisi�n
+Procesamiento electr�nico de informaci�n, hospedaje y otros servicios relacionados
+Operadores de servicios de telecomunicaciones inal�mbricas
+Grabaci�n de discos compactos (CD) y de video digital (DVD) o casetes musicales
+Edici�n de software
+Portales de b�squeda en la red y otros servicios de suministro de informaci�n
+Servicios de postproducci�n y otros servicios para la industria f�lmica y del video
+Edici�n de revistas y otras publicaciones peri�dicas en formato electr�nico
+Otros servicios de telecomunicaciones
+Servicios de distribuci�n de audio y video en tiempo real (streaming), redes sociales, cadenas de radio y televisi�n y otros proveedores de contenido
+Edici�n de peri�dicos en formato electr�nico
+Edici�n de libros integrada con la impresi�n
+Producci�n de videoclips, comerciales y otros materiales audiovisuales
+Otros servicios de grabaci�n del sonido
+Productoras y distribuidoras discogr�ficas
+Estaciones de transmisi�n de programas de radio
+Estaciones de transmisi�n de programas de televisi�n
+Bibliotecas y archivos del sector privado
+Operadores de servicios de telecomunicaciones v�a sat�lite
+Distribuci�n de pel�culas y de otros materiales audiovisuales
+Restaurantes de autoservicio
+Restaurantes con servicio de preparaci�n de antojitos
+Restaurantes con servicio de preparaci�n de alimentos a la carta o de comida corrida
+Hoteles con otros servicios integrados
+Cafeter�as, fuentes de sodas, never�as, refresquer�as y similares
+Restaurantes que preparan otro tipo de alimentos para llevar
+Restaurantes con servicio de preparaci�n de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar
+Restaurantes con servicio de preparaci�n de tacos y tortas
+Bares, cantinas y similares
+Centros nocturnos, discotecas y similares
+Servicios de preparaci�n de alimentos en unidades m�viles
+Caba�as, villas y similares
+Servicios de comedor para empresas e instituciones
+Servicios de preparaci�n de otros alimentos para consumo inmediato
+Hoteles sin otros servicios integrados
+Restaurantes con servicio de preparaci�n de pescados y mariscos
+Servicios de preparaci�n de alimentos para ocasiones especiales
+Departamentos y casas amueblados con servicios de hoteler�a
+Pensiones y casas de hu�spedes
+Campamentos y albergues recreativos
+Moteles
+Agencias de colocaci�n
+Otros servicios de apoyo a los negocios
+Servicios combinados de apoyo en instalaciones
+Agencias de cobranza
+Servicios de limpieza de inmuebles
+Servicios de administraci�n de negocios
+Servicios de investigaci�n y de protecci�n y custodia, excepto mediante monitoreo
+Servicios de acceso a computadoras
+Servicios de protecci�n y custodia mediante el monitoreo de sistemas de seguridad
+Organizaci�n de excursiones y paquetes tur�sticos para agencias de viajes
+Agencias de viajes
+Agencias de empleo temporal
+Suministro de personal permanente
+Servicios de recepci�n de llamadas telef�nicas y promoci�n por tel�fono
+Servicios de empacado y etiquetado
+Otros servicios de reservaciones
+Otros servicios de manejo de residuos por el sector p�blico
+Recolecci�n de residuos no peligrosos por el sector p�blico
+Organizadores de convenciones y ferias comerciales e industriales
+Servicios de fotocopiado, fax y afines
+Recolecci�n de residuos no peligrosos por el sector privado
+Servicios de control y exterminaci�n de plagas
+Otros servicios de apoyo secretarial y similares
+Tratamiento y disposici�n final de residuos no peligrosos por el sector privado
+Servicios de preparaci�n de documentos
+Manejo de residuos peligrosos y servicios de remediaci�n a zonas da�adas por materiales o residuos peligrosos
+Otros servicios de manejo de residuos por el sector privado
+Otros servicios de limpieza
+Servicios de instalaci�n y mantenimiento de �reas verdes
+Despachos de investigaci�n de solvencia financiera
+Artistas, escritores y t�cnicos independientes
+Centros de acondicionamiento f�sico del sector privado
+Museos del sector privado
+Promotores del sector privado de espect�culos art�sticos, culturales, deportivos y similares que cuentan con instalaciones para presentarlos
+Otros servicios recreativos prestados por el sector privado
+Museos del sector p�blico
+Cantantes y grupos musicales del sector privado
+Casas de juegos electr�nicos
+Venta de billetes de loter�a, pron�sticos deportivos y otros boletos de sorteo
+Clubes deportivos del sector privado
+Compa��as de teatro del sector privado
+Promotores del sector p�blico de espect�culos art�sticos, culturales, deportivos y similares que cuentan con instalaciones para presentarlos
+Promotores de espect�culos art�sticos, culturales, deportivos y similares que no cuentan con instalaciones para presentarlos
+Agentes y representantes de artistas, deportistas y similares
+Centros de acondicionamiento f�sico del sector p�blico
+Billares
+Clubes deportivos del sector p�blico
+Clubes o ligas de aficionados
+Compa��as de danza del sector privado
+Grupos musicales del sector p�blico
+Otros juegos de azar
+Parques de diversiones y tem�ticos del sector privado
+Grutas, parques naturales y otros sitios del patrimonio cultural de la naci�n
+Escuelas de educaci�n superior del sector privado
+Escuelas del sector privado que combinan diversos niveles de educaci�n
+Escuelas de educaci�n primaria del sector p�blico
+Escuelas de educaci�n preescolar del sector p�blico
+Escuelas de deporte del sector privado
+Otros servicios educativos proporcionados por el sector privado
+Escuelas de arte del sector privado
+Escuelas de educaci�n media superior del sector p�blico
+Escuelas de educaci�n media superior del sector privado
+Escuelas de educaci�n primaria del sector privado
+Escuelas de educaci�n preescolar del sector privado
+Escuelas del sector privado de educaci�n para necesidades especiales
+Servicios de profesores particulares
+Escuelas para la capacitaci�n de ejecutivos del sector privado
+Escuelas del sector privado dedicadas a la ense�anza de oficios
+Escuelas de arte del sector p�blico
+Escuelas de educaci�n secundaria general del sector p�blico
+Escuelas de educaci�n media t�cnica terminal del sector privado
+Escuelas de idiomas del sector privado
+Otros servicios educativos proporcionados por el sector p�blico
+Escuelas de educaci�n superior del sector p�blico
+Escuelas de educaci�n secundaria general del sector privado
+Escuelas de idiomas del sector p�blico
+Escuelas comerciales y secretariales del sector privado
+Escuelas del sector p�blico que combinan diversos niveles de educaci�n
+Escuelas de deporte del sector p�blico
+Escuelas de computaci�n del sector privado
+Escuelas de educaci�n secundaria t�cnica del sector p�blico
+Escuelas del sector p�blico de educaci�n para necesidades especiales
+Escuelas de educaci�n media t�cnica terminal del sector p�blico
+Escuelas del sector p�blico dedicadas a la ense�anza de oficios
+Servicios de apoyo a la educaci�n
+Escuelas de educaci�n t�cnica superior del sector privado
+Banca m�ltiple
+Otros servicios relacionados con la intermediaci�n burs�til
+Bolsa de valores
+Cajas de ahorro popular
+Servicios relacionados con la intermediaci�n crediticia no burs�til
+Compa��as de seguros
+Casas de empe�o
+Agentes, ajustadores y gestores de seguros y fianzas
+Sociedades financieras de objeto m�ltiple
+Centros cambiarios
+Otras instituciones de intermediaci�n crediticia y financiera no burs�til
+Asesor�a en inversiones
+Montep�os
+Banca central
+Administraci�n de cajas de pensi�n y de seguros independientes
+Compa��as afianzadoras
+Fondos y fideicomisos financieros
+Compa��as de autofinanciamiento
+Casas de bolsa
+Uniones de cr�dito
+Inmobiliarias y corredores de bienes ra�ces
+Alquiler de otros art�culos para el hogar y personales
+Alquiler sin intermediaci�n de oficinas y locales comerciales
+Servicios de administraci�n de bienes ra�ces
+Otros servicios relacionados con los servicios inmobiliarios
+Alquiler de prendas de vestir
+Alquiler de maquinaria y equipo comercial y de servicios
+Alquiler de maquinaria y equipo para construcci�n, miner�a y actividades forestales
+Alquiler sin intermediaci�n de otros bienes ra�ces
+Alquiler de autom�viles sin chofer
+Alquiler de equipo de c�mputo y de otras m�quinas y mobiliario de oficina
+Alquiler sin intermediaci�n de viviendas amuebladas
+Alquiler de mesas, sillas, vajillas y similares
+Alquiler sin intermediaci�n de salones para fiestas y convenciones
+Alquiler sin intermediaci�n de viviendas no amuebladas
+Servicios de alquiler de marcas registradas, patentes y franquicias
+Alquiler sin intermediaci�n de teatros, estadios, auditorios y similares
+Alquiler de maquinaria y equipo agropecuario, pesquero y para la industria manufacturera
+Alquiler sin intermediaci�n de edificios industriales dentro de un parque industrial
+Alquiler de autobuses, minibuses y remolques sin chofer
+Alquiler de aparatos el�ctricos y electr�nicos para el hogar y personales
+Alquiler de maquinaria y equipo para mover, levantar y acomodar materiales
+Alquiler de equipo de transporte, excepto terrestre
+Centros generales de alquiler
+Bufetes jur�dicos
+Servicios veterinarios para mascotas prestados por el sector privado
+Agencias de anuncios publicitarios
+Servicios de rotulaci�n y otros servicios de publicidad
+Servicios de fotograf�a y videograbaci�n
+Servicios de consultor�a en administraci�n
+Servicios de contabilidad y auditor�a
+Servicios de arquitectura
+Servicios de ingenier�a
+Otros servicios de consultor�a cient�fica y t�cnica
+Servicios de investigaci�n de mercados y encuestas de opini�n p�blica
+Servicios de investigaci�n cient�fica y desarrollo en ciencias naturales y exactas, ingenier�a, y ciencias de la vida, prestados por el sector p�blico
+Dise�o gr�fico
+Servicios de arquitectura de paisaje y urbanismo
+Agencias de publicidad
+Agencias de correo directo
+Servicios de dise�o de sistemas de c�mputo y servicios relacionados
+Servicios de apoyo para efectuar tr�mites legales
+Laboratorios de pruebas
+Otros servicios relacionados con la contabilidad
+Otros servicios profesionales, cient�ficos y t�cnicos
+Dise�o de modas y otros dise�os especializados
+Agencias de relaciones p�blicas
+Servicios de investigaci�n cient�fica y desarrollo en ciencias naturales y exactas, ingenier�a, y ciencias de la vida, prestados por el sector privado
+Servicios de inspecci�n de edificios
+Servicios de consultor�a en medio ambiente
+Dise�o industrial
+Dise�o y decoraci�n de interiores
+Notar�as p�blicas
+Servicios de dibujo
+Servicios de traducci�n e interpretaci�n
+Agencias de representaci�n de medios
+Servicios veterinarios para mascotas prestados por el sector p�blico
+Servicios de elaboraci�n de mapas
+Distribuci�n de material publicitario
+Otros servicios de intermediaci�n para el transporte de carga
+Servicios de carga y descarga para el transporte por agua
+Alquiler de autom�viles con chofer
+Transporte a�reo regular en l�neas a�reas extranjeras
+Servicios de agencias aduanales
+Transporte tur�stico por agua
+Servicios de mudanzas
+Administraci�n de aeropuertos y helipuertos
+Transporte tur�stico por tierra
+Transporte a�reo regular en l�neas a�reas nacionales
+Transporte a�reo no regular
+Transporte colectivo for�neo de pasajeros de ruta fija
+Otros servicios relacionados con el transporte a�reo
+Otro autotransporte for�neo de carga general
+Otro autotransporte local de carga especializado
+Servicios de administraci�n de carreteras, puentes y servicios auxiliares
+Transporte colectivo urbano y suburbano de pasajeros en trolebuses y trenes ligeros
+Otro transporte terrestre de pasajeros
+Otros servicios relacionados con el transporte
+Otro autotransporte local de carga general
+Transporte colectivo urbano y suburbano de pasajeros en autobuses de ruta fija
+Transporte colectivo urbano y suburbano de pasajeros en metro
+Transporte colectivo urbano y suburbano de pasajeros en autobuses que transitan en carril exclusivo
+Autotransporte for�neo de materiales y residuos peligrosos
+Otro autotransporte for�neo de carga especializado
+Alquiler de autobuses con chofer
+Otros servicios relacionados con el transporte por agua
+Servicios de gr�a
+Transporte de gas natural por ductos
+Servicios de mensajer�a y paqueter�a for�nea
+Otros servicios de almacenamiento con instalaciones especializadas
+Servicios de mensajer�a y paqueter�a local
+Autotransporte for�neo de productos agr�colas sin refrigeraci�n
+Servicios postales
+Autotransporte local de materiales para la construcci�n
+Administraci�n de puertos y muelles
+Transporte escolar y de personal
+Almacenes generales de dep�sito
+Otros servicios de almacenamiento general sin instalaciones especializadas
+Almacenamiento con refrigeraci�n

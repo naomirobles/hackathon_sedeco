@@ -7,6 +7,7 @@ export default function Toolbar({ activePanels, togglePanel, isChatOpen }) {
 
   const buttons = [
     { id: 'poi',             icon: Icons.layers,   tooltip: 'CAPAS POI' },
+    { id: 'denue',           icon: Icons.denue,    tooltip: 'Unidades Económicas DENUE' },
     { id: 'map',             icon: Icons.map,      tooltip: 'Tipo de Mapa' },
     { id: 'filter',          icon: Icons.filter,   tooltip: 'Filtros' },
     { id: 'location',        icon: Icons.location, tooltip: 'Búsqueda por Coordenadas' },
