@@ -13,15 +13,20 @@ const BASE = '/api';
 /**
  * Envía un mensaje al chatbot y retorna la respuesta del LLM.
  *
- * @param {string} sessionId  — ID único de la sesión conversacional
- * @param {string} message    — Mensaje del usuario
- * @returns {Promise<{ response: string }>}
+ * @param {string} sessionId    — ID único de la sesión conversacional
+ * @param {string} message      — Mensaje del usuario
+ * @param {string} assistantId  — ID del asistente (opcional)
+ * @returns {Promise<{ response: string, map_html?: string }>}
  */
-export async function sendChatMessage(sessionId, message) {
+export async function sendChatMessage(sessionId, message, assistantId = 'viabilidad_negocio') {
   const res = await fetch(`${BASE}/chat`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ session_id: sessionId, message }),
+    body: JSON.stringify({ 
+      session_id: sessionId, 
+      message,
+      assistant_id: assistantId 
+    }),
   });
 
   if (!res.ok) {

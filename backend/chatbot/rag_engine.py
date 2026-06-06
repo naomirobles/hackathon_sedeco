@@ -80,7 +80,7 @@ def _build_index() -> VectorStoreIndex:
 
     if openrouter_api_key:
         from llama_index.llms.openai_like import OpenAILike
-        print("✓ Chatbot: Usando OpenRouter como motor LLM")
+        print("✓ Chatbot: Usando OpenRouter como motor LLM (Gemma 4)")
         Settings.llm = OpenAILike(
             model="google/gemma-4-26b-a4b-it",
             api_base="https://openrouter.ai/api/v1",
@@ -91,6 +91,7 @@ def _build_index() -> VectorStoreIndex:
                 "X-Title": "Asesor de Negocios CDMX",
             }
         )
+
     elif openai_api_key:
         print("✓ Chatbot: Usando OpenAI como motor LLM")
         Settings.llm = OpenAI(
