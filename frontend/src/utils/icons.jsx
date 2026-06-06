@@ -1,20 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDove, 
-        faDrawPolygon, 
-        faLocationArrow, 
-        faRulerCombined,
-        faArrowsLeftRightToLine,
-        faDownload,
-        faBuildingColumns,
-        faShieldHalved,
-        faHospital,
-        faGraduationCap,
-        faCartPlus,
-        faBuildingFlag,
-        faHouseChimneyUser,
-        faGlobe,
-        faEarthAmerica
-      } from '@fortawesome/free-solid-svg-icons';
+import { 
+  faDove, 
+  faDrawPolygon, 
+  faLocationArrow, 
+  faRulerCombined,
+  faArrowsLeftRightToLine,
+  faDownload,
+  faBuildingColumns,
+  faShieldHalved,
+  faHospital,
+  faGraduationCap,
+  faCartPlus,
+  faBuildingFlag,
+  faHouseChimneyUser,
+  faEarthAmerica
+} from '@fortawesome/free-solid-svg-icons';
 
 const Icons = {
   layers: (
@@ -22,7 +22,7 @@ const Icons = {
       strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <polygon points="12 2 2 7 12 12 22 7 12 2" />
       <polyline points="2 17 12 22 22 17" />
-      <polyline points="2 12 12 17 22 12" />
+      <polyline points="2 12 12 22 22 12" />
     </svg>
   ),
   map: (
@@ -81,8 +81,8 @@ const Icons = {
       <path d="M19.5 9.5L21 11l-8 8-1.5-1.5V16h-2v-2h-2v-2h-2v-2H5V8H3L4.5 6.5 19.5 9.5zM15 11h2v2h-2v-2zm-4 4h2v2h-2v-2zm-4-4h2v2H7v-2z" />
     </svg>
   ),
-  peace:   <FontAwesomeIcon icon={faDove}          style={{ width: '24px', height: '24px' }} />,
-  draw:    <FontAwesomeIcon icon={faDrawPolygon}   style={{ width: '24px', height: '24px' }} />,
+  peace:   <FontAwesomeIcon icon={faDove} style={{ width: '24px', height: '24px' }} />,
+  draw:    <FontAwesomeIcon icon={faDrawPolygon} style={{ width: '24px', height: '24px' }} />,
   pointer: <FontAwesomeIcon icon={faLocationArrow} style={{ width: '24px', height: '24px' }} />,
   ruler: <FontAwesomeIcon icon={faRulerCombined} style={{ width: '24px', height: '24px' }} />,
   distance: <FontAwesomeIcon icon={faArrowsLeftRightToLine} style={{ width: '34px', height: '34px' }} />,
@@ -112,24 +112,21 @@ const Icons = {
   ecobici: <img src="../../assets/pois/ecobici.png" width="22" height="22" alt="*" />,
   tren_ligero: <img src="../../assets/pois/tren_ligero.png" width="22" height="22" alt="*" />,
   verificentro: <img src="../../assets/pois/verificentro.png" width="22" height="22" alt="*" />,
-
-  // ícono de chat para el asistente virtual
   chat: (
     <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/>
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z" />
+    </svg>
+  ),
   denue: (
     <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z" />
     </svg>
   ),
-
-  //ícono de cámara para cámaras
   layersCamera: (
     <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-      <path d="M13 7h-2L9 9H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-4l-2-2zM12 18c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/>
+      <path d="M13 7h-2L9 9H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-4l-2-2zM12 18c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z" />
     </svg>
   ),
-
 };
 
 export default Icons;
